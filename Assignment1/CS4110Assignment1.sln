@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS4110Assignment1", "CS4110
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivisibleBy7", "DivisibleBy7\DivisibleBy7.csproj", "{06DC83BC-6087-456E-B9EE-08E986973E57}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{737697FB-4F38-4683-BB48-DAEC4EEE40DC}"
+	ProjectSection(SolutionItems) = preProject
+		CS4110Assignment1.doc = CS4110Assignment1.doc
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowersOf2", "PowersOf2\PowersOf2.csproj", "{8E6E2357-DA6F-4E99-BF4B-27C4B8CD6A6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +28,10 @@ Global
 		{06DC83BC-6087-456E-B9EE-08E986973E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06DC83BC-6087-456E-B9EE-08E986973E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06DC83BC-6087-456E-B9EE-08E986973E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6E2357-DA6F-4E99-BF4B-27C4B8CD6A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6E2357-DA6F-4E99-BF4B-27C4B8CD6A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6E2357-DA6F-4E99-BF4B-27C4B8CD6A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6E2357-DA6F-4E99-BF4B-27C4B8CD6A6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
