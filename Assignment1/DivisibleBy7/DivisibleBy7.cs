@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DivisibleBy7;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +26,14 @@ namespace DivisibleBy7
                 return 1;
             }
 
-            int a1 = 7;
 
-            if (num % a1 == 0)
+            // Integer 7 is in DivisibleBy7
+            // If x is in DivisibleBy7, then so is x + 7 
+            var div7 = new DivisibleBy7();
+            int result;
+            result = div7.inDivisibleBy7(num);
+
+            if (result == 0)
             {
                 System.Console.WriteLine("X = {0}  Member?  True", num);
             }
@@ -38,6 +44,18 @@ namespace DivisibleBy7
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
             return 0;
+        }
+
+        public int inDivisibleBy7(int x)
+        {
+            if (x % 7 == 0)
+            {
+                return 0;
+            }else
+            {
+                return 1;
+            }
+
         }
     }
 }
