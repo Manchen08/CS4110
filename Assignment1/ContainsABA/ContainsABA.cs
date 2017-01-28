@@ -18,19 +18,59 @@ namespace ContainsABA
             //Words a and b are in OddPalindrome.
             //If w is a word in OddPalindrome, then so are awa and bwb (concatenation).
             var a = new ContainsABA();
-            bool result = a.inContainsABA(s);
+            bool result = a.inContainsABA(s, 0);
             Console.WriteLine("String = {0} Member?  {1}", s, result);
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
             return 0;
         }
 
-        public bool inContainsABA(string w)
+        public bool inContainsABA(string w, int place)
         {
-            for (int i = 0; i < w.Length; i++)
+            // Can't contain ABA if it's less than 3.
+            if (w.Length == 0)
+                return false;
+
+            switch (place)
             {
-                
+                case 0:
+                    if (w[0] == 'a')
+                        place = 1;
+                    break;
+
+                case 1:
+                    if (w[0] == 'b')
+                        place = 2;
+                    else if (w[0] == 'a')
+                        place = 1;
+                    else
+                        place = 0;
+                    break;
+
+                case 2:
+                    if (w[0] == 'a')
+                    {
+                        for (int i = 0; i < w.Length -1; i++)
+                        {
+                            if(w[i] != 'a' && w[i] != 'b')
+                            {
+                                return false;
+                            }
+
+                        }
+                        return true;
+                    }
+                    else
+                        place = 0;
+                    break;
             }
+
+            if (w[0] != 'a' && w[0] != 'b')
+                return false;
+
+            w = w.Remove(0, 1);
+
+            return inContainsABA(w, place);
         }
     }
 }
