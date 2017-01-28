@@ -31,7 +31,7 @@ namespace ContainsABA
             if (w.Length == 0)
                 return false;
 
-            switch (place)
+            switch (place) // Check where we are in the check for aba
             {
                 case 0:
                     if (w[0] == 'a')
@@ -65,7 +65,7 @@ namespace ContainsABA
                     break;
             }
 
-            if (w[0] != 'a' && w[0] != 'b')
+            if (w[0] != 'a' && w[0] != 'b') // Only allow a or b
                 return false;
 
             w = w.Remove(0, 1);
