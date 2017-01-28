@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumXY", "SumXY\SumXY.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddPalindrome", "OddPalindrome\OddPalindrome.csproj", "{386842FF-25FF-4D62-9177-CE698EA2B7D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainsABA", "ContainsABA\ContainsABA.csproj", "{ED0CCB6D-DF2C-4435-88DE-3703C6BB11E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{386842FF-25FF-4D62-9177-CE698EA2B7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{386842FF-25FF-4D62-9177-CE698EA2B7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{386842FF-25FF-4D62-9177-CE698EA2B7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0CCB6D-DF2C-4435-88DE-3703C6BB11E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0CCB6D-DF2C-4435-88DE-3703C6BB11E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0CCB6D-DF2C-4435-88DE-3703C6BB11E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0CCB6D-DF2C-4435-88DE-3703C6BB11E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

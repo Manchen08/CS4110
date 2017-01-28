@@ -28,17 +28,27 @@ namespace SumXY
             //Integers 17 and 43 are in SumXY
             //If x and y are in SumXY, then so is x + y
 
-            if (num % 2 == 0)
-            {
-                System.Console.WriteLine("X = {0}  Member?  True", num);
-            }
-            else
-            {
-                System.Console.WriteLine("X = {0}  Member?  False", num);
-            }
+            var sum = new SumXY();
+            bool result;
+            result = sum.inSumXY(num);
+            Console.WriteLine("X = {0} Member?  {1}", num, result);
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
             return 0;
+        }
+
+        public bool inSumXY(int x)
+        {
+            if(x == 17)
+                return true;
+
+            if (x == 43)
+                return true;
+
+            if (x < 17)
+                return false;
+
+            return (inSumXY(x - 17) || inSumXY(x - 43));
         }
     }
 }

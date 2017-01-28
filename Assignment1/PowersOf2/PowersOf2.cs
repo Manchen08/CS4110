@@ -31,31 +31,25 @@ namespace PowersOf2
             //Integer 1 is in PowersOf2
             //If x is in PowersOf2, then so is 2x.
             var pow = new PowersOf2();
-            decimal result;
+            bool result;
             result = pow.inPowersOf2(num);
-            if (result == 0)
-            {
-                System.Console.WriteLine("X = {0}  Member?  True", num);
-            }
-            else
-            {
-                System.Console.WriteLine("X = {0}  Member?  False", num);
-            }
+            
+            Console.WriteLine("X = {0} Member?  {1}", num, result);
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
             return 0;
         }
 
-        public decimal inPowersOf2(decimal x)
+        public bool inPowersOf2(decimal x)
         {
             if(x == 1)
             {
-                return 0;
+                return true;
             }
 
 
             if (x < 1)
-                return 1;
+                return false;
 
             return (inPowersOf2(x / 2));
         }

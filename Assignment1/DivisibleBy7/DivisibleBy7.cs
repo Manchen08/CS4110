@@ -30,32 +30,27 @@ namespace DivisibleBy7
             // Integer 7 is in DivisibleBy7
             // If x is in DivisibleBy7, then so is x + 7 
             var div7 = new DivisibleBy7();
-            int result;
+            bool result;
             result = div7.inDivisibleBy7(num);
 
-            if (result == 0)
-            {
-                System.Console.WriteLine("X = {0}  Member?  True", num);
-            }
-            else
-            {
-                System.Console.WriteLine("X = {0}  Member?  False", num);
-            }
+            Console.WriteLine("X = {0} Member?  {1}", num, result);
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
             return 0;
         }
 
-        public int inDivisibleBy7(int x)
+        public bool inDivisibleBy7(int x)
         {
-            if (x % 7 == 0)
+            if (x == 7)
             {
-                return 0;
-            }else
+                return true;
+            }
+            if (x < 7)
             {
-                return 1;
+                return false;
             }
 
+            return inDivisibleBy7(x - 7);
         }
     }
 }
